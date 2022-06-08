@@ -1,0 +1,594 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+a{
+   text-decoration: none;
+   color: black;
+}
+a:hover{
+    color: white;
+}
+nav{
+    background-color: rgb(187, 214, 255);
+    height: 9vh;
+    font-size: 15px;
+    width: 103vw;*/
+}
+#head{
+    position: relative;
+    top: 15%;
+    padding-left: 50px;
+    font-size: 2rem;
+    color: rgb(124, 81, 0);
+}
+ul{
+    position: relative;
+    top: -40%;
+    left: -0%;
+}
+li{
+    display: inline-block;
+    float: right;
+    padding-left: 20px;
+}
+.got{
+    text-align: justify;
+}
+.got1{
+    text-align: justify;
+}
+#b2{
+    height: 400px;
+    width: 300px;
+}
+#b3{
+    height: 400px;
+    width: 300px;
+}
+.container{
+    display: flex;
+    max-width: 100%;*/
+}
+.container__column {
+    /*flex: 1;
+    /* Space between columns */
+   margin: 0px 8px;
+
+    /* Layout each column */
+    display: flex;
+    flex-direction:column;
+
+
+    background-color: #ffffff;
+}
+
+.container__content {
+    /* Take available height */
+    /*flex: 1;*/
+}
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 103vw;*/
+}
+.layered-card {
+    position: relative;
+}
+
+.layered-card::before {
+    background: rgba(0, 0, 0, 0.3);
+    content: '';
+
+    /* Position */
+    top: ;
+    left: 37%;
+    position: absolute;
+    transform: translate(0.5rem, 0.5rem);
+
+    /* Size */
+    height: 400px;
+    width: 300px;
+
+    /* Display under the main content */
+    z-index: -1;
+}
+
+
+.cards {
+    display: flex;
+
+    /* Put a card in the next row when previous cards take all width */
+    flex-wrap: wrap;
+
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.cards__item {
+    /* There will be 4 cards per row */
+    flex-basis: 25%;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 300px;
+    height: 150px;
+}
+
+
+.layered-card1 {
+    position: relative;
+}
+
+.layered-card1::before {
+    background: rgba(0, 0, 0, 0.1);
+    content: '';
+
+    /* Position */
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(1rem, 1rem);
+
+    /* Size */
+    /*height: 100%;
+    width: 100%;
+
+    /* Display under the main content */
+    z-index: -1;
+}
+#cas{
+    height:200px;
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.1);
+}
+.cast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+#cas:hover{
+    transform: scale(1.1);
+}
+figcaption::first-letter{
+    font-size: x-large;
+    color: rgb(139, 139, 255);
+}
+.rate{
+        height: 45vh;
+        width: 25vw;
+        color: red;
+        border: 1px solid black;
+        position: relative;
+    left: 25%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1),5px 5px  rgba(0, 0, 0, 0.1);
+    font-weight: lighter;
+}
+.rate1{
+    height: 45vh;
+    width: 25vw;
+    color: tomato;
+    border: 1px solid black;
+    position: relative;
+    left: 25%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1),5px 5px rgba(0, 0, 0, 0.1);
+    font-weight: lighter;
+}
+
+#A,#B,#C,#D{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1),5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#A:hover{
+       box-shadow: 5px 5px tomato;
+}
+
+#B:hover{
+    box-shadow: 5px 5px rgb(255, 211, 203);
+}
+
+#C:hover{
+    box-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+#D:hover{
+    box-shadow: 5px 5px rgb(173, 173, 173);
+}
+
+#gt,#gt1{
+    width: 380px;
+    height: 327px;
+}
+#gt:hover{
+    box-shadow: 5px 5px red, 5px 5px red;
+}
+#gt1:hover{
+    box-shadow: 5px 5px skyblue, 5px 5px skyblue;
+}
+#ha,#ha1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+#ha::first-letter{
+    color: aqua;
+}
+
+/*
+@media screen and (max-width:600px) {
+    body{
+        background-color: tomato;
+    }
+    #ab{
+        color: white;
+        font-family: 'Caveat', cursive;
+    }
+    .got{
+        font-family: 'Caveat', cursive;
+    }
+    .got1{
+        font-family: 'Caveat', cursive;
+    }
+    footer{
+        font-family: 'Caveat', cursive;
+    }
+}
+@media screen and (min-width:800px) {
+    body{
+        background: linear-gradient(to right,rgb(161, 191, 255),rgb(255, 171, 171));
+    }
+    .got,.got1{
+        color: black;
+        font-family: 'Bebas Neue', cursive;
+    }
+    #ab{
+        font-family: 'Bebas Neue', cursive;
+    }
+    footer{
+        font-family: 'Bebas Neue', cursive;
+    }
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#2{
+    padding: 20px 20px 20px;
+}*/
+/*footer p{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+/**{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+   /* background:linear-gradient(to top,#9dff00, #9502ff);
+   */
+/*}
+.container{
+    width: 100vw;
+}
+header{
+    background-color:#000000;
+    height: 5vh;
+    width: 100vw;
+}
+header ul li{
+    display: inline-block;
+    list-style-type: none;
+    float: right;
+    padding-top: 8px;
+    padding-left: 10px;
+    font-family: 'Caveat', cursive;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.first{
+       /* padding-left: 700px;*/
+  /*      font-size: 16pt;
+        white-space: nowrap;
+        font-family: 'Caveat', cursive;
+        color: rgb(255, 254, 254);
+        animation-name: sahil;
+        animation-duration: 3s;
+        animation-direction: alternate-reverse;
+}
+@keyframes sahil {
+        From{
+               transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(10deg);
+        }
+}
+.first::first-letter{
+    font-size: 25px;
+}
+.got{
+    text-align: justify;
+    color: rgb(54, 0, 0);
+    font-family: 'Bebas Neue', cursive;
+    /*font-family: 'Lobster', cursive;*/
+}
+/*.got1{
+    font-family: 'Bebas Neue', cursive;
+}
+.container {
+    display: flex;
+}
+
+.container__sidebar {
+    width: 18vw;
+    overflow: visible;
+}
+
+.container__main {
+    /* Take the remaining width */
+    flex: 1;
+
+    /* Make it scrollable */
+    overflow: auto; 
+    
+    width: 82vw;
+
+
+}
+/*figcaption{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input{
+    border-radius: 10px;
+}
+.sg{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin-left: 50px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    background-color: rgba(53, 53, 241, 0.833);
+    color: whitesmoke;
+    border-radius: 4px;
+}
+  /* Styles for the first letter */
+/*.got:first-letter
+{
+    /* Display at the left */
+  /*  float: left;
+    line-height: 1;
+
+    /* Spacing */
+    /*margin: 0 8px 0 0;
+    padding: 0 8px;
+
+    /* Optional */
+    /*font-size: 64px;
+    font-weight: 700;
+    font-family: 'Lobster', cursive;
+}
+.b1{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+#b2{
+    border: 1px solid black;
+}
+aside{
+    background-color: rgb(255, 220, 246);    
+    font-family: 'Alfa Slab One', cursive;
+    /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+}
+/*.container1 {
+    /* Align sub-items to top */
+  /*  align-items: start;
+    display: flex;
+}
+
+.container__media {
+    margin-right: 16px;
+
+    /* Set the width for the media object */
+    /*width: 200px;*/
+}
+
+/*.container__content {
+    /* Take the remaining width */
+    flex: 1;
+}
+.b/*o::first-line{
+                   font-size: 30px;
+}
+label{
+    padding-left: 37px;
+    text-transform: uppercase;
+    color: rgb(51, 0, 0);
+}
+progress{
+    margin-left: 20px;
+    height: 15px;
+}
+.bo1::first-line{
+                   font-size: 25px;
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #010a0b;
+    font-size: large;
+    color: whitesmoke;
+}
+#about1{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    color: #2d0000;
+    text-shadow: 2px 2px rgb(233, 143, 143);
+    margin-left: 600px;
+}
+.ab{
+    padding-top: 20px;
+    margin-right: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(45, 0, 0);
+}
+.fa-hashtag{
+    color: #1d0000;
+}
+#insta{
+    color: rgb(25, 1, 1);
+}
+.dl{
+    text-indent: 30px;
+}
+.call{
+    padding-left: 60px;
+    color: rgb(14, 0, 0);
+    text-decoration: underline dotted;
+}
+.probar{
+    height: 0.3vh;
+    background-color: rgb(255, 255, 255);
+    animation-name: bar;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes bar {
+                    0%{
+                        width: 10vw;
+                    }
+                    25%{
+                        width: 20vw;
+                    }
+                    75%{
+                        width: 80vw;
+                    }
+                    100%{
+                        width: 100vw;
+                    }
+}
+ .bo1{
+     color: rgb(45, 0, 0);
+ }
+ .bo{
+     color: #290000;
+ }
+ .dl{
+     color: #290000;
+ }
+@media only screen and (max-width:600px) {
+         body{
+             background-color: coral;
+             color: azure;
+         }
+        /* #net{
+             width: 25%;
+             height: 25%;
+         }
+         main{
+             float: right;
+             width: fit-content;
+         }*/
+}
+/*@media only screen and (max-width:800px)
+{
+    .ab{
+        word-break: break-all;
+    }
+}
+a:hover{
+    color: white;
+}
+h1{
+    text-align: center;
+}
+@media only screen and (max-width:600px) {
+            .got{
+                position: relative;
+                left: 0%;
+            }
+            .got1{
+                position: relative;
+                left: 0%;
+            }
+            #b2{
+                position: relative;
+                left: 1600px;
+            }
+            #b3{
+                position: relative;
+                left: 40%;
+            }
+            .bo{
+                position: relative;
+                left: 30%;
+                text-decoration: underline;
+            }
+            .bo1{
+                position: relative;
+                left:40%;
+                text-decoration: underline;
+            }
+            .rot{
+                position: absolute;
+                left: 40%;
+            }
+}
+#b2{
+    position: relative;
+    left: 500px;
+}
+.bo,.bo1{
+    position: relative;
+    left: 500px;
+}
+#b3{
+    position: relative;
+    left: 650px;
+}
+.bo1{
+    position: relative;
+    left: 650px;
+}
+.rot{
+    position: relative;
+    left: 650px;
+}
